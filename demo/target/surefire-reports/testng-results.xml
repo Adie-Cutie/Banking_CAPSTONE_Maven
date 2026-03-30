@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-27T19:59:42 IST" name="Surefire suite" finished-at="2026-03-27T19:59:45 IST" duration-ms="2755">
+    <groups>
+    </groups>
+    <test started-at="2026-03-27T19:59:42 IST" name="Surefire test" finished-at="2026-03-27T19:59:45 IST" duration-ms="2755">
+      <class name="com.example.AuthSecurityTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:42 IST" name="setup" finished-at="2026-03-27T19:59:42 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmailCaseInsensitivity()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:42 IST" name="testEmailCaseInsensitivity" description="RA-02: Verify Case Insensitivity for Email Login" finished-at="2026-03-27T19:59:43 IST" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailCaseInsensitivity -->
+        <test-method signature="testLoginResponseTime()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:43 IST" name="testLoginResponseTime" description="RA-03: Performance - Login Response Time SLA" finished-at="2026-03-27T19:59:43 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginResponseTime -->
+        <test-method signature="testLoginSchema()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:43 IST" name="testLoginSchema" description="RA-06: Data Consistency - Login Response Schema Validation" finished-at="2026-03-27T19:59:44 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSchema -->
+        <test-method signature="testMalformedJson()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:44 IST" name="testMalformedJson" description="RA-05: Verify Registration Payload with Malformed JSON" finished-at="2026-03-27T19:59:44 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMalformedJson -->
+        <test-method signature="testNoSQLInjection()[pri:0, instance:com.example.AuthSecurityTests@5f683daf]" started-at="2026-03-27T19:59:44 IST" name="testNoSQLInjection" description="RA-01: Verify NoSQL Injection Prevention in Login" finished-at="2026-03-27T19:59:44 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNoSQLInjection -->
+      </class> <!-- com.example.AuthSecurityTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
