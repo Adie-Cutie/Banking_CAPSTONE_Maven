@@ -1,2 +1,3 @@
 com\example\AppTest.class
+com\example\TransferSecurityTests.class
 com\example\AuthSecurityTests.class
