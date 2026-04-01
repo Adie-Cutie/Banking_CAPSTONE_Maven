@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 30 17:14:49 IST 2026</td>
+<td>Started on:</td><td>Wed Apr 01 10:38:16 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3801 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4341 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,132 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_08_VerifyLargeAmountFormatting()'><b>RA_08_VerifyLargeAmountFormatting</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td><div><pre>java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader &apos;bootstrap&apos;)
+	at java.base/java.lang.Integer.compareTo(Integer.java:59)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:25)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:22)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$ComparatorMatcher.describeMismatchSafely(ComparatorMatcherBuilder.java:86)
+	at org.hamcrest.TypeSafeMatcher.describeMismatch(TypeSafeMatcher.java:82)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:20)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:8)
+	at org.hamcrest.TypeSafeDiagnosingMatcher.matches(TypeSafeDiagnosingMatcher.java:55)
+	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:106)
+	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.example.TransactionsHistoryTest.RA_08_VerifyLargeAmountFormatting(TransactionsHistoryTest.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762628123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace762628123'><pre>java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader &apos;bootstrap&apos;)
+	at java.base/java.lang.Integer.compareTo(Integer.java:59)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:25)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:22)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$ComparatorMatcher.describeMismatchSafely(ComparatorMatcherBuilder.java:86)
+	at org.hamcrest.TypeSafeMatcher.describeMismatch(TypeSafeMatcher.java:82)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:20)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:8)
+	at org.hamcrest.TypeSafeDiagnosingMatcher.matches(TypeSafeDiagnosingMatcher.java:55)
+	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:106)
+	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.example.TransactionsHistoryTest.RA_08_VerifyLargeAmountFormatting(TransactionsHistoryTest.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,60 +202,105 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.AuthSecurityTests.testEmailCaseInsensitivity()'><b>testEmailCaseInsensitivity</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-02: Verify Case Insensitivity for Email Login</td>
-<td></td>
-<td>1</td>
-<td>com.example.AuthSecurityTests@355ce81c</td></tr>
-<tr>
-<td title='com.example.TransferSecurityTests.testBlockSelfTransfer()'><b>testBlockSelfTransfer</b><br>Test class: com.example.TransferSecurityTests</td>
+<td title='com.example.AuthSecurityTests.testNoSQLInjection()'><b>testNoSQLInjection</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-01: Verify NoSQL Injection Prevention in Login</td>
 <td></td>
 <td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
-<tr>
-<td title='com.example.TransferSecurityTests.testDecimalPrecision()'><b>testDecimalPrecision</b><br>Test class: com.example.TransferSecurityTests</td>
-<td></td>
-<td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
-<tr>
-<td title='com.example.TransferSecurityTests.testEnforceJsonContentType()'><b>testEnforceJsonContentType</b><br>Test class: com.example.TransferSecurityTests</td>
-<td></td>
-<td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
+<td>com.example.AuthSecurityTests@4da4253</td></tr>
 <tr>
 <td title='com.example.TransferSecurityTests.testRejectInvalidAmounts()'><b>testRejectInvalidAmounts</b><br>Test class: com.example.TransferSecurityTests</td>
 <td></td>
 <td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
 <tr>
-<td title='com.example.AuthSecurityTests.testNoSQLInjection()'><b>testNoSQLInjection</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-01: Verify NoSQL Injection Prevention in Login</td>
+<td title='com.example.TransactionsHistoryTest.RA_03_Security_ForbiddenFieldsScrubbing()'><b>RA_03_Security_ForbiddenFieldsScrubbing</b><br>Test class: com.example.TransactionsHistoryTest</td>
 <td></td>
 <td>0</td>
-<td>com.example.AuthSecurityTests@355ce81c</td></tr>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
 <tr>
-<td title='com.example.TransferSecurityTests.testTransferResponseTime()'><b>testTransferResponseTime</b><br>Test class: com.example.TransferSecurityTests</td>
+<td title='com.example.TransactionsHistoryTest.RA_06_Negative_MethodNotAllowed()'><b>RA_06_Negative_MethodNotAllowed</b><br>Test class: com.example.TransactionsHistoryTest</td>
 <td></td>
 <td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
-<tr>
-<td title='com.example.AuthSecurityTests.testLoginSchema()'><b>testLoginSchema</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-05: Data Consistency - Login Response Schema Validation</td>
-<td></td>
-<td>0</td>
-<td>com.example.AuthSecurityTests@355ce81c</td></tr>
-<tr>
-<td title='com.example.AuthSecurityTests.testLoginResponseTime()'><b>testLoginResponseTime</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-03: Performance - Login Response Time SLA</td>
-<td></td>
-<td>0</td>
-<td>com.example.AuthSecurityTests@355ce81c</td></tr>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
 <tr>
 <td title='com.example.AuthSecurityTests.testMalformedJson()'><b>testMalformedJson</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-04: Verify Registration Payload with Malformed JSON</td>
 <td></td>
 <td>0</td>
-<td>com.example.AuthSecurityTests@355ce81c</td></tr>
+<td>com.example.AuthSecurityTests@4da4253</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_04_VerifyAccountNumbersAreStrings()'><b>RA_04_VerifyAccountNumbersAreStrings</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransferSecurityTests.testBlockSelfTransfer()'><b>testBlockSelfTransfer</b><br>Test class: com.example.TransferSecurityTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
 <tr>
 <td title='com.example.TransferSecurityTests.testSQLInjectionPayload()'><b>testSQLInjectionPayload</b><br>Test class: com.example.TransferSecurityTests</td>
 <td></td>
 <td>0</td>
-<td>com.example.TransferSecurityTests@503d687a</td></tr>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_09_CORS_HeaderValidation()'><b>RA_09_CORS_HeaderValidation</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_10_Database_Isolation_Check()'><b>RA_10_Database_Isolation_Check</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransferSecurityTests.testEnforceJsonContentType()'><b>testEnforceJsonContentType</b><br>Test class: com.example.TransferSecurityTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
+<tr>
+<td title='com.example.AuthSecurityTests.testLoginSchema()'><b>testLoginSchema</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-05: Data Consistency - Login Response Schema Validation</td>
+<td></td>
+<td>0</td>
+<td>com.example.AuthSecurityTests@4da4253</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_07_VerifyPaginationMetadataPresence()'><b>RA_07_VerifyPaginationMetadataPresence</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_05_Negative_InvalidAuthToken()'><b>RA_05_Negative_InvalidAuthToken</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.AuthSecurityTests.testEmailCaseInsensitivity()'><b>testEmailCaseInsensitivity</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-02: Verify Case Insensitivity for Email Login</td>
+<td></td>
+<td>1</td>
+<td>com.example.AuthSecurityTests@4da4253</td></tr>
+<tr>
+<td title='com.example.AuthSecurityTests.testLoginResponseTime()'><b>testLoginResponseTime</b><br>Test class: com.example.AuthSecurityTests<br>Test method: RA-03: Performance - Login Response Time SLA</td>
+<td></td>
+<td>0</td>
+<td>com.example.AuthSecurityTests@4da4253</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_01_VerifyResponseFormatAndCharSet()'><b>RA_01_VerifyResponseFormatAndCharSet</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransactionsHistoryTest.RA_02_VerifyStrictSchemaConstraints()'><b>RA_02_VerifyStrictSchemaConstraints</b><br>Test class: com.example.TransactionsHistoryTest</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransactionsHistoryTest@7690781</td></tr>
+<tr>
+<td title='com.example.TransferSecurityTests.testDecimalPrecision()'><b>testDecimalPrecision</b><br>Test class: com.example.TransferSecurityTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
+<tr>
+<td title='com.example.TransferSecurityTests.testTransferResponseTime()'><b>testTransferResponseTime</b><br>Test class: com.example.TransferSecurityTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.TransferSecurityTests@77eca502</td></tr>
 </table><p>
 </body>
 </html>

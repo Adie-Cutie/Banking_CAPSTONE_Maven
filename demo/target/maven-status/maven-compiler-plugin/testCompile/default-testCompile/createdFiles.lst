@@ -1,3 +1,4 @@
-com\example\AppTest.class
-com\example\TransferSecurityTests.class
 com\example\AuthSecurityTests.class
+com\example\AppTest.class
+com\example\TransactionsHistoryTest.class
+com\example\TransferSecurityTests.class

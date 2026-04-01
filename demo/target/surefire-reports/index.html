@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_08_VerifyLargeAmountFormatting">RA_08_VerifyLargeAmountFormatting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +115,51 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_01_VerifyResponseFormatAndCharSet">RA_01_VerifyResponseFormatAndCharSet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_02_VerifyStrictSchemaConstraints">RA_02_VerifyStrictSchemaConstraints</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_03_Security_ForbiddenFieldsScrubbing">RA_03_Security_ForbiddenFieldsScrubbing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_04_VerifyAccountNumbersAreStrings">RA_04_VerifyAccountNumbersAreStrings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_05_Negative_InvalidAuthToken">RA_05_Negative_InvalidAuthToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_06_Negative_MethodNotAllowed">RA_06_Negative_MethodNotAllowed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_07_VerifyPaginationMetadataPresence">RA_07_VerifyPaginationMetadataPresence</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_09_CORS_HeaderValidation">RA_09_CORS_HeaderValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransactionsHistoryTest" class="method navigator-link" hash-for-method="RA_10_Database_Isolation_Check">RA_10_Database_Isolation_Check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.example.TransferSecurityTests" class="method navigator-link" hash-for-method="testBlockSelfTransfer">testBlockSelfTransfer</a> <!-- method navigator-link -->
@@ -168,52 +227,128 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.TransferSecurityTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.example.TransactionsHistoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testBlockSelfTransfer">
-                  </a> <!-- testBlockSelfTransfer -->
-                  <span class="method-name">testBlockSelfTransfer</span>
+                  <a name="RA_08_VerifyLargeAmountFormatting">
+                  </a> <!-- RA_08_VerifyLargeAmountFormatting -->
+                  <span class="method-name">RA_08_VerifyLargeAmountFormatting</span>
+                  <div class="stack-trace">java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader &apos;bootstrap&apos;)
+	at java.base/java.lang.Integer.compareTo(Integer.java:59)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:25)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$1.compare(ComparatorMatcherBuilder.java:22)
+	at org.hamcrest.comparator.ComparatorMatcherBuilder$ComparatorMatcher.describeMismatchSafely(ComparatorMatcherBuilder.java:86)
+	at org.hamcrest.TypeSafeMatcher.describeMismatch(TypeSafeMatcher.java:82)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:20)
+	at org.hamcrest.core.Every.matchesSafely(Every.java:8)
+	at org.hamcrest.TypeSafeDiagnosingMatcher.matches(TypeSafeDiagnosingMatcher.java:55)
+	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:106)
+	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at com.example.TransactionsHistoryTest.RA_08_VerifyLargeAmountFormatting(TransactionsHistoryTest.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TransactionsHistoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RA_01_VerifyResponseFormatAndCharSet">
+                  </a> <!-- RA_01_VerifyResponseFormatAndCharSet -->
+                  <span class="method-name">RA_01_VerifyResponseFormatAndCharSet</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testDecimalPrecision">
-                  </a> <!-- testDecimalPrecision -->
-                  <span class="method-name">testDecimalPrecision</span>
+                  <a name="RA_02_VerifyStrictSchemaConstraints">
+                  </a> <!-- RA_02_VerifyStrictSchemaConstraints -->
+                  <span class="method-name">RA_02_VerifyStrictSchemaConstraints</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testEnforceJsonContentType">
-                  </a> <!-- testEnforceJsonContentType -->
-                  <span class="method-name">testEnforceJsonContentType</span>
+                  <a name="RA_03_Security_ForbiddenFieldsScrubbing">
+                  </a> <!-- RA_03_Security_ForbiddenFieldsScrubbing -->
+                  <span class="method-name">RA_03_Security_ForbiddenFieldsScrubbing</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testRejectInvalidAmounts">
-                  </a> <!-- testRejectInvalidAmounts -->
-                  <span class="method-name">testRejectInvalidAmounts</span>
+                  <a name="RA_04_VerifyAccountNumbersAreStrings">
+                  </a> <!-- RA_04_VerifyAccountNumbersAreStrings -->
+                  <span class="method-name">RA_04_VerifyAccountNumbersAreStrings</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSQLInjectionPayload">
-                  </a> <!-- testSQLInjectionPayload -->
-                  <span class="method-name">testSQLInjectionPayload</span>
+                  <a name="RA_05_Negative_InvalidAuthToken">
+                  </a> <!-- RA_05_Negative_InvalidAuthToken -->
+                  <span class="method-name">RA_05_Negative_InvalidAuthToken</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testTransferResponseTime">
-                  </a> <!-- testTransferResponseTime -->
-                  <span class="method-name">testTransferResponseTime</span>
+                  <a name="RA_06_Negative_MethodNotAllowed">
+                  </a> <!-- RA_06_Negative_MethodNotAllowed -->
+                  <span class="method-name">RA_06_Negative_MethodNotAllowed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RA_07_VerifyPaginationMetadataPresence">
+                  </a> <!-- RA_07_VerifyPaginationMetadataPresence -->
+                  <span class="method-name">RA_07_VerifyPaginationMetadataPresence</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RA_09_CORS_HeaderValidation">
+                  </a> <!-- RA_09_CORS_HeaderValidation -->
+                  <span class="method-name">RA_09_CORS_HeaderValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RA_10_Database_Isolation_Check">
+                  </a> <!-- RA_10_Database_Isolation_Check -->
+                  <span class="method-name">RA_10_Database_Isolation_Check</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,6 +406,56 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TransferSecurityTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlockSelfTransfer">
+                  </a> <!-- testBlockSelfTransfer -->
+                  <span class="method-name">testBlockSelfTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDecimalPrecision">
+                  </a> <!-- testDecimalPrecision -->
+                  <span class="method-name">testDecimalPrecision</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEnforceJsonContentType">
+                  </a> <!-- testEnforceJsonContentType -->
+                  <span class="method-name">testEnforceJsonContentType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRejectInvalidAmounts">
+                  </a> <!-- testRejectInvalidAmounts -->
+                  <span class="method-name">testRejectInvalidAmounts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSQLInjectionPayload">
+                  </a> <!-- testSQLInjectionPayload -->
+                  <span class="method-name">testSQLInjectionPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTransferResponseTime">
+                  </a> <!-- testTransferResponseTime -->
+                  <span class="method-name">testTransferResponseTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -284,6 +469,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.example.AppTest&quot;/&gt;
       &lt;class name=&quot;com.example.AuthSecurityTests&quot;/&gt;
+      &lt;class name=&quot;com.example.TransactionsHistoryTest&quot;/&gt;
       &lt;class name=&quot;com.example.TransferSecurityTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -298,7 +484,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (3 classes)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -324,51 +510,91 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEmailCaseInsensitivity')
 data.setCell(0, 2, 'com.example.AuthSecurityTests')
-data.setCell(0, 3, 1240);
+data.setCell(0, 3, 1042);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testLoginSchema')
 data.setCell(1, 2, 'com.example.AuthSecurityTests')
-data.setCell(1, 3, 917);
+data.setCell(1, 3, 790);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testLoginResponseTime')
 data.setCell(2, 2, 'com.example.AuthSecurityTests')
-data.setCell(2, 3, 192);
+data.setCell(2, 3, 214);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testDecimalPrecision')
 data.setCell(3, 2, 'com.example.TransferSecurityTests')
-data.setCell(3, 3, 179);
+data.setCell(3, 3, 167);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testTransferResponseTime')
-data.setCell(4, 2, 'com.example.TransferSecurityTests')
-data.setCell(4, 3, 159);
+data.setCell(4, 1, 'testNoSQLInjection')
+data.setCell(4, 2, 'com.example.AuthSecurityTests')
+data.setCell(4, 3, 164);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testNoSQLInjection')
-data.setCell(5, 2, 'com.example.AuthSecurityTests')
-data.setCell(5, 3, 151);
+data.setCell(5, 1, 'RA_10_Database_Isolation_Check')
+data.setCell(5, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(5, 3, 162);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testBlockSelfTransfer')
-data.setCell(6, 2, 'com.example.TransferSecurityTests')
-data.setCell(6, 3, 88);
+data.setCell(6, 1, 'RA_02_VerifyStrictSchemaConstraints')
+data.setCell(6, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(6, 3, 142);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSQLInjectionPayload')
-data.setCell(7, 2, 'com.example.TransferSecurityTests')
-data.setCell(7, 3, 64);
+data.setCell(7, 1, 'RA_03_Security_ForbiddenFieldsScrubbing')
+data.setCell(7, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(7, 3, 134);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testMalformedJson')
-data.setCell(8, 2, 'com.example.AuthSecurityTests')
-data.setCell(8, 3, 28);
+data.setCell(8, 1, 'testTransferResponseTime')
+data.setCell(8, 2, 'com.example.TransferSecurityTests')
+data.setCell(8, 3, 122);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testRejectInvalidAmounts')
-data.setCell(9, 2, 'com.example.TransferSecurityTests')
-data.setCell(9, 3, 22);
+data.setCell(9, 1, 'RA_04_VerifyAccountNumbersAreStrings')
+data.setCell(9, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(9, 3, 100);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testEnforceJsonContentType')
-data.setCell(10, 2, 'com.example.TransferSecurityTests')
-data.setCell(10, 3, 14);
+data.setCell(10, 1, 'RA_08_VerifyLargeAmountFormatting')
+data.setCell(10, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(10, 3, 96);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'RA_01_VerifyResponseFormatAndCharSet')
+data.setCell(11, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(11, 3, 88);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testBlockSelfTransfer')
+data.setCell(12, 2, 'com.example.TransferSecurityTests')
+data.setCell(12, 3, 66);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'RA_07_VerifyPaginationMetadataPresence')
+data.setCell(13, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(13, 3, 65);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSQLInjectionPayload')
+data.setCell(14, 2, 'com.example.TransferSecurityTests')
+data.setCell(14, 3, 47);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testMalformedJson')
+data.setCell(15, 2, 'com.example.AuthSecurityTests')
+data.setCell(15, 3, 20);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'RA_05_Negative_InvalidAuthToken')
+data.setCell(16, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(16, 3, 20);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testRejectInvalidAmounts')
+data.setCell(17, 2, 'com.example.TransferSecurityTests')
+data.setCell(17, 3, 17);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'RA_06_Negative_MethodNotAllowed')
+data.setCell(18, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(18, 3, 14);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testEnforceJsonContentType')
+data.setCell(19, 2, 'com.example.TransferSecurityTests')
+data.setCell(19, 3, 11);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'RA_09_CORS_HeaderValidation')
+data.setCell(20, 2, 'com.example.TransactionsHistoryTest')
+data.setCell(20, 3, 9);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -406,54 +632,103 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testEmailCaseInsensitivity</span>
-                <span class="method-start">529 ms</span>
+                <span class="method-start">470 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLoginResponseTime</span>
-                <span class="method-start">1772 ms</span>
+                <span class="method-start">1515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLoginSchema</span>
-                <span class="method-start">1965 ms</span>
+                <span class="method-start">1731 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testMalformedJson</span>
-                <span class="method-start">2884 ms</span>
+                <span class="method-start">2523 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNoSQLInjection</span>
-                <span class="method-start">2913 ms</span>
+                <span class="method-start">2544 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TransactionsHistoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2709 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">RA_01_VerifyResponseFormatAndCharSet</span>
+                <span class="method-start">2881 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_02_VerifyStrictSchemaConstraints</span>
+                <span class="method-start">2970 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_03_Security_ForbiddenFieldsScrubbing</span>
+                <span class="method-start">3112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_04_VerifyAccountNumbersAreStrings</span>
+                <span class="method-start">3247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_05_Negative_InvalidAuthToken</span>
+                <span class="method-start">3348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_06_Negative_MethodNotAllowed</span>
+                <span class="method-start">3369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_07_VerifyPaginationMetadataPresence</span>
+                <span class="method-start">3384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RA_08_VerifyLargeAmountFormatting</span>
+                <span class="method-start">3450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_09_CORS_HeaderValidation</span>
+                <span class="method-start">3554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RA_10_Database_Isolation_Check</span>
+                <span class="method-start">3564 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.TransferSecurityTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3066 ms</span>
+                <span class="method-start">3727 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testBlockSelfTransfer</span>
-                <span class="method-start">3236 ms</span>
+                <span class="method-start">3880 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDecimalPrecision</span>
-                <span class="method-start">3324 ms</span>
+                <span class="method-start">3946 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testEnforceJsonContentType</span>
-                <span class="method-start">3503 ms</span>
+                <span class="method-start">4114 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testRejectInvalidAmounts</span>
-                <span class="method-start">3518 ms</span>
+                <span class="method-start">4126 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSQLInjectionPayload</span>
-                <span class="method-start">3540 ms</span>
+                <span class="method-start">4143 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTransferResponseTime</span>
-                <span class="method-start">3606 ms</span>
+                <span class="method-start">4191 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
