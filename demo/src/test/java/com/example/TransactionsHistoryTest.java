@@ -17,8 +17,6 @@ public class TransactionsHistoryTest {
     @BeforeClass
     public void setup() {
         RestAssured.baseURI = BASE_URL;
-
-        // Obtain token before running tests
         authToken = given()
             .contentType(ContentType.JSON)
             .body("{ \"email\": \"john@example.com\", \"password\": \"password123\" }")
@@ -61,12 +59,11 @@ public class TransactionsHistoryTest {
         .then()
             .body("sender", everyItem(not(hasKey("password"))))
             .body("sender", everyItem(not(hasKey("email"))))
-            .body("receiver", everyItem(not(hasKey("__v")))); // Internal versioning hidden
+            .body("receiver", everyItem(not(hasKey("__v")))); 
     }
 
     @Test(priority = 4)
     public void RA_04_VerifyAccountNumbersAreStrings() {
-        // Essential to ensure account numbers don't lose leading zeros in JSON
         given()
             .header("Authorization", "Bearer " + authToken)
         .when()
@@ -89,7 +86,6 @@ public class TransactionsHistoryTest {
 
     @Test(priority = 6)
     public void RA_06_Negative_MethodNotAllowed() {
-        // History should only support GET. POST/PUT should be rejected.
         given()
             .header("Authorization", "Bearer " + authToken)
         .when()
@@ -100,13 +96,10 @@ public class TransactionsHistoryTest {
 
     @Test(priority = 7)
     public void RA_07_VerifyPaginationMetadataPresence() {
-        // If your backend supports pagination in the future
         Response response = given()
             .header("Authorization", "Bearer " + authToken)
         .when()
             .get("/transactions/history");
-            
-        // Check if headers indicate page size or total records
         response.then().header("X-Total-Count", anything()); 
     }
 
