@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 21, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.232 s <<< FAILURE! - in TestSuite
-RA_08_VerifyLargeAmountFormatting(com.example.TransactionsHistoryTest)  Time elapsed: 0.103 s  <<< FAILURE!
-java.lang.ClassCastException: class java.lang.Float cannot be cast to class java.lang.Integer (java.lang.Float and java.lang.Integer are in module java.base of loader 'bootstrap')
-	at com.example.TransactionsHistoryTest.RA_08_VerifyLargeAmountFormatting(TransactionsHistoryTest.java:120)
-

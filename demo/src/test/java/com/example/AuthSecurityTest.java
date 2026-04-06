@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class AuthSecurityTests {
+public class AuthSecurityTest {
 
     @BeforeClass
     public void setup() {

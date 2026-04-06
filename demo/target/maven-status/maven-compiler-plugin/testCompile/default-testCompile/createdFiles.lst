@@ -1,4 +1,3 @@
-com\example\AuthSecurityTests.class
-com\example\AppTest.class
-com\example\TransactionsHistoryTest.class
-com\example\TransferSecurityTests.class
+com\example\utils\mongoConfig.class
+com\example\TransferSecurityTest.class
+com\example\TransferDBTest.class

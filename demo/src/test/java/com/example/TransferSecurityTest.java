@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class TransferSecurityTests{
+public class TransferSecurityTest{
 
     private String authToken;
     private final String BASE_URL = "http://localhost:3000/api";
